@@ -1,0 +1,84 @@
+body {
+    background-color: #2d2b2d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/*** seat arrangement  ***/
+.seat {
+    background-color: rgba(251, 247, 253, 0.849);
+    height: 25px;
+    width: 25px;
+    margin: 3px;
+    border-radius:6px ;
+}
+
+.seat.selected {
+    background-color: #EF2F88;
+}
+
+.seat.reserved {
+    background-color: rgb(240, 166, 88);
+}
+
+.seat:not(.reserved):hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.seat:nth-of-type(3){
+    margin-right : 20px
+}
+
+.seat:nth-last-of-type(2){
+    margin-left: 20px;
+}
+
+.row {
+    display: flex;
+}
+
+/*** screen settings ***/
+
+.screen {
+    background-color: #fff;
+    height: 50px;
+    width: 100%;
+    margin: 20px 0;
+    box-shadow: 0 3px 8px rgba(255, 255, 255, 255);
+
+}
+
+/*** Movie List ***/
+
+.movie-list{
+    margin: 20px ;
+}
+
+/*** İnfo ***/
+
+.info {
+    background-color: rgba(0, 0, 0,0.2);
+    color: #fff;
+    padding: 5px 10px;
+    display: flex;
+}
+
+.info li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:  0 10px;
+}
+
+p {
+    color: #fff;
+    font-size: 20px;
+}
+
+p.text span {
+    color: #EF2F88;
+}
